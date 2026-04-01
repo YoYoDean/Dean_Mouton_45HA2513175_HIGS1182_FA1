@@ -7,6 +7,8 @@ public class WinScript : MonoBehaviour
     {
         if (other.CompareTag("Player") && GameManager.instance.collectable == GameManager.instance.chickSpawend)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("GameOver");
         }
     }

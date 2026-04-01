@@ -31,13 +31,14 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 randomOffset = new Vector3(
             Random.Range(-5f, 5f),
-            0,
+            1,
             Random.Range(-5f, 5f)
         );
 
         Vector3 spawnPos = spawnHere.position + randomOffset;
-
         Instantiate(Enemy, spawnPos, spawnHere.rotation);
+        
+        
     }
 
     }

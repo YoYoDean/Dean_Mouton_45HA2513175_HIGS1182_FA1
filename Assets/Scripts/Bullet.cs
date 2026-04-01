@@ -19,10 +19,12 @@ public class Bullet : MonoBehaviour
         Debug.Log("Hit: " + other.name);
         if (other.CompareTag("Enemy"))
     {
+        Debug.Log("Bullet");
         // Get the Health comp on the enemy that was hit
         Health enemyHealth = other.GetComponent<Health>();
         if (enemyHealth != null)
         {
+            Debug.Log("Bullet");
             enemyHealth.HurtEnemy(50);
         }
     }
