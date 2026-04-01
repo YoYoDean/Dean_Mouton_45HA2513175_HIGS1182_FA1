@@ -27,12 +27,19 @@ public class EnemySpawner : MonoBehaviour
     }
     void Spawn()
     {
-        for(int i = 0; spawnQty > i ; i++)
-        {
-        Instantiate(Enemy, spawnHere.position, spawnHere.rotation);
-        }
+        for (int i = 0; i < spawnQty; i++)
+    {
+        Vector3 randomOffset = new Vector3(
+            Random.Range(-5f, 5f),
+            0,
+            Random.Range(-5f, 5f)
+        );
+
+        Vector3 spawnPos = spawnHere.position + randomOffset;
+
+        Instantiate(Enemy, spawnPos, spawnHere.rotation);
     }
 
-
+    }
 
 }

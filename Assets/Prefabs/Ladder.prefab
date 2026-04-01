@@ -7308,6 +7308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6366843689814850294}
+  - component: {fileID: 271203417971401313}
   m_Layer: 0
   m_Name: Ladder
   m_TagString: Untagged
@@ -7324,7 +7325,7 @@ Transform:
   m_GameObject: {fileID: 8541188062453538533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.689701, y: -0.9208064, z: -0.22908919}
+  m_LocalPosition: {x: -6.734, y: -0.9208064, z: -0.22908919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7337,3 +7338,24 @@ Transform:
   - {fileID: 8921845765579745254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &271203417971401313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541188062453538533}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.400506, y: 2.4383717, z: 2.2385693}
+  m_Center: {x: 4.700252, y: 3.0842104, z: -2.4980512}
