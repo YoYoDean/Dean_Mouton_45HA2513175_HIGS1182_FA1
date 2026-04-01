@@ -21,7 +21,9 @@ public class CollectableSpawner : MonoBehaviour
         {
             spawend = true;
             colliderBox.enabled = false;
-            Debug.Log(spawnQty + "Coins Spawned");
+            GameManager.instance.chickSpawend += spawnQty;
+            UiManager.instance.UpdateScore();
+            Debug.Log(spawnQty + "Chickens Spawned");
             Spawn();
         }
     }

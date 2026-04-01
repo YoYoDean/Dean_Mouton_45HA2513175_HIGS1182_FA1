@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7554358360540794592}
   - component: {fileID: 4136683797458850949}
   - component: {fileID: 8965613348991430389}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 205
+  m_VersionIndex: 211
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4559512516128682146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 5356456522568817368}
   - component: {fileID: 5501003725014171004}
   - component: {fileID: 7784300371845589939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 183
+  m_VersionIndex: 189
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 705692955643861476}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 5807563623974175062}
   - component: {fileID: 7756134595327939384}
   - component: {fileID: 922664150836984406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 9010225543347999372}
   - component: {fileID: 4761676424853373579}
   - component: {fileID: 3428032611233787242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}

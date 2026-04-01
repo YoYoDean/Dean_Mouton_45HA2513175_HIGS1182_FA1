@@ -94,10 +94,11 @@ public class PlayerMove : MonoBehaviour
     }
 
     public void Shoot()
-{
+{   
+    Debug.Log("Shoot");
     Rigidbody rb = pool.GetBullet();
 
-    rb.transform.position = muzzle.position;
+    rb.transform.position = muzzle.position + muzzle.forward * 0.5f;
     rb.transform.rotation = muzzle.rotation;
 
     rb.gameObject.SetActive(true);

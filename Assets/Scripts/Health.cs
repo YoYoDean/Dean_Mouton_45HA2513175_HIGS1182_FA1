@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     public float playerHealth = 100f;
     public float enemyHealth = 100f;
     private GameObject playerObj;
+
 
     void Awake()
     {
@@ -17,7 +19,9 @@ public class Health : MonoBehaviour
         playerHealth -= hurtAmount;
         if (playerHealth <= 0)
         {
-            playerObj.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("GameOver");
         }
     }
     public void HurtEnemy(int hurtAmount)

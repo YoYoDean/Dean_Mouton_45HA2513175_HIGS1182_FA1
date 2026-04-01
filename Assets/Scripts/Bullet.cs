@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Hit: " + other.name);
         if (other.CompareTag("Enemy"))
     {
         // Get the Health comp on the enemy that was hit

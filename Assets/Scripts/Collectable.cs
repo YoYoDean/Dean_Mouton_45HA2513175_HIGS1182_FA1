@@ -9,6 +9,7 @@ public class Collectable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.instance.collectable += 1 ;
+            UiManager.instance.UpdateScore();
             Destroy(gameObject);
         }
     }

@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int collectable;
+    public int chickSpawend;
     public static GameManager instance;
 
     public void Awake()
