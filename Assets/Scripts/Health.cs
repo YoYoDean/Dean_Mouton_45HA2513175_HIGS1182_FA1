@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     public float enemyHealth = 100f;
     private GameObject playerObj;
     public static Health instance;
+    private UiManager uiManager;
 
 
     void Awake()
@@ -16,8 +17,15 @@ public class Health : MonoBehaviour
             instance = this;
         }
 
+        uiManager = GameObject.FindGameObjectWithTag("UiManager").GetComponent<UiManager>();
+
     }
 
+    public void HealPlayer()
+    {
+        playerHealth += 30;
+        UiManager.instance.UpdateHealth();
+    }
     public void HurtPlayer(int hurtAmount)
     {
         playerHealth -= hurtAmount;
@@ -36,6 +44,9 @@ public class Health : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Debug.Log("Enemy Killed!");
+            GameManager.instance.enemyKilled += 1;
+            PlayerPrefs.SetInt("EnemiesKilled", PlayerPrefs.GetInt("EnemiesKilled") + 1);
+            uiManager.UpdateScore();
             Destroy(gameObject);
         }
     }

@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba0b5a49def7744fb378727f51ca829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seeRange: 15
+  seeRange: 100
   attackRange: 1.5
   attackCooldown: 1
 --- !u!114 &-380349150640039685
@@ -163,4 +163,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
-  enemyHealth: 200
+  enemyHealth: 100

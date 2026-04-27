@@ -20,16 +20,20 @@ public class BulletPool : MonoBehaviour
 
     public Rigidbody GetBullet()
     {
+        //Debug.Log("RunGETBULLET");
         foreach (Rigidbody bullet in pool)
         {
+           // Debug.Log("foreach");
             if (!bullet.gameObject.activeInHierarchy)
             {
+               // Debug.Log("Bullet");
                 return bullet;
             }
         }
-
+       // Debug.Log("NewBullet");
         Rigidbody newBullet = Instantiate(bulletPrefab, transform);
         pool.Add(newBullet);
+        
         return newBullet;
     }
 }

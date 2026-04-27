@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  sens: 50
+  sens: 30
   cameraPivot: {fileID: 7788062356713832160}
   bullet: {fileID: 9076599040598489786, guid: a851fef8110cdce46b549e09539d2afe, type: 3}
   bulletrb: {fileID: 9076599040598489786, guid: a851fef8110cdce46b549e09539d2afe, type: 3}

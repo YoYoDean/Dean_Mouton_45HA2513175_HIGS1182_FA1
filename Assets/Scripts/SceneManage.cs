@@ -10,16 +10,24 @@ public class SceneManage : MonoBehaviour
         {
             Restart();
         }
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            MainMenu();
+        }
     }
 
-    void Restart()
+    public void Restart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("Game");
+    } 
+    public void EndlessMode()
+    {
+        SceneManager.LoadScene("EndlessMode");
     } 
 
     public void MainMenu()

@@ -1,16 +1,33 @@
+using System.Data.SqlTypes;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HealthPickup : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private bool isInside;
+    public UiManager ui;
+    void Awake()
     {
-        
+         ui = GameObject.FindGameObjectWithTag("UiManager").GetComponent<UiManager>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (isInside && Keyboard.current.eKey.wasPressedThisFrame &&  GameManager.instance.money >= 20)
+        {
+            GameManager.instance.money -= 20;
+            Health.instance.HealPlayer();
+            ui.UpdateMoney();
+
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        ui.pressEKey.SetActive(true);
+        isInside = true;
+    }
+    void OnTriggerExit(Collider other)
+    {
+        ui.pressEKey.SetActive(false);
+        isInside = false;
     }
 }

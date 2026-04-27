@@ -12,6 +12,7 @@ public class CollectableSpawner : MonoBehaviour
     {
         spawnQty = Random.Range(1 , 10);
         colliderBox = GetComponent<BoxCollider>();
+
         
     }
 
@@ -27,7 +28,7 @@ public class CollectableSpawner : MonoBehaviour
             Spawn();
         }
     }
-    void Spawn()
+    public void Spawn()
     {
         for (int i = 0; i < spawnQty; i++)
     {
@@ -40,6 +41,13 @@ public class CollectableSpawner : MonoBehaviour
         Vector3 spawnPos = spawnHere.position + randomOffset;
 
         Instantiate(coin, spawnPos, spawnHere.rotation);
+    }
+    }
+    public void SpawnEnlessMode()
+    {
+        for (int i = 0; i < spawnQty; i++)
+    {
+        Instantiate(coin, spawnHere.position, spawnHere.rotation);
     }
     }
 
