@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class HealthPickup : MonoBehaviour
 {
     private bool isInside;
-    public UiManager ui;
+    private UiManager ui;
     void Awake()
     {
          ui = GameObject.FindGameObjectWithTag("UiManager").GetComponent<UiManager>();

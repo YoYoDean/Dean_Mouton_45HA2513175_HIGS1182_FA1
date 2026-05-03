@@ -10,7 +10,7 @@ public class CollectableSpawner : MonoBehaviour
 
     void Awake()
     {
-        spawnQty = Random.Range(1 , 10);
+        spawnQty = Random.Range(1 , 5);
         colliderBox = GetComponent<BoxCollider>();
 
         

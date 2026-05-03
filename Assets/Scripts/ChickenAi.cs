@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class ChickenAI : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public float patrolRadius = 10f;
+    public float patrolRadius = 5f;
 
     private Vector3 startPoint;
 
@@ -19,7 +19,7 @@ public class ChickenAI : MonoBehaviour
     void Update()
     {
         // If reached destination, pick a new one
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 2f)
         {
             SetNewDestination();
         }

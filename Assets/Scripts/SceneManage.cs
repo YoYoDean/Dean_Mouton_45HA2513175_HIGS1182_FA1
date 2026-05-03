@@ -18,7 +18,7 @@ public class SceneManage : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("EndlessMode");
     }
 
     public void StartGame()
